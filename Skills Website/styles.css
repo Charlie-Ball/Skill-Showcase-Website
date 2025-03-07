@@ -1,9 +1,10 @@
 #spanExample {
-    color: rgb(0, 0, 255);
+    color: #45A29E;
 }
 
 html {
-    background-color: black;
+    background-color: #0B0C10;
+    color: #45A29E;
 }
 
 nav {
@@ -14,9 +15,9 @@ nav {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-header {
-    background-color: rgb(206, 150, 31);
-    
+header{
+    background-color: #C5C6C7;
+    color: #1F2833;
 }
 
 body {
@@ -25,7 +26,6 @@ body {
 
 main, footer {
     margin: 2%;
-    background-color: rgb(119, 119, 119);
     padding: 2vw
 }
 
@@ -35,6 +35,7 @@ h1, h2 {
 
 p {
     font-family: Georgia, Garamond, serif;
+    color: #C5C6C7;
 }
 
 h1 {
@@ -44,4 +45,25 @@ h1 {
 img {
     max-width: 2.5vw;
     max-height: 2.5vw;
+}
+
+li {
+    color: #C5C6C7;
+}
+
+a, a:visited {
+    color: #45A29E;
+}
+
+a:hover, a:active {
+    color: #66FCF1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#git {
+    background-color: #C5C6C7;
 }
