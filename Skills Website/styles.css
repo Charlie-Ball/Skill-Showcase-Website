@@ -1,3 +1,47 @@
 #spanExample {
     color: rgb(0, 0, 255);
 }
+
+html {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(206, 150, 31);
+    
+}
+
+body {
+    margin: 0;
+}
+
+main, footer {
+    margin: 2%;
+    background-color: rgb(119, 119, 119);
+    padding: 2vw
+}
+
+h1, h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: Georgia, Garamond, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+}
