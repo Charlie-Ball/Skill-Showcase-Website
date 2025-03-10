@@ -7,24 +7,27 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
+        <header id="mainHead">
             <nav>
-                <h3 aria-hidden="true">About</h3>
-                <h3 aria-hidden="true">Skills</h3>
-                <h3 aria-hidden="true">Whats next?</h3>
+                <a class="nava" href="#about"><h3 aria-hidden="true">About</h3></a>
+                <a class="nava" href="#skill"><h3 aria-hidden="true">Skills</h3></a>
+                <a class="nava" href="#next"><h3 aria-hidden="true">Whats next?</h3></a>
             </nav>
         </header>
         <main>
             <h1>Skills showcase website</h1>
             <section>
-                <h2>About</h2>
+                <h2 id="about">About</h2>
                 <p>This is a website where I will be practising web development skills that I learn, including broader things such as forms and small things like <span id="spanExample">colouring these words with span tags</span>.  Im going to keep updating this with everything I learn for practise and so I have it here as a referance.</p>
             </section>
             <section>
-                <h2>Skills</h2>
+                <h2 id="skill">Skills</h2>
+                <div id="flex">
+                    <a href="form.html"><img src="Images/Form.png" alt="Picture of form" class="button"></a>
+                </div>
             </section>
             <section>
-                <h2>Whats next?</h2>
+                <h2 id="next">Whats next?</h2>
                 <p>I'm not done learning, the next few things I am going to learn is:</p>
                 <ul>
                     <li>Intermediate CSS</li>
@@ -38,11 +41,11 @@
     </body>
     <footer>
         <div>
-            <img src="Images/instagram.png" alt="Instagram logo">
+            <img src="Images/instagram.png" alt="Instagram logo" class="logo">
             <a href="https://www.instagram.com/_charlieball/" target="_blank">_charlieball</a>
         </div>
         <div>
-            <img src="Images/github.png" alt="Github logo" id="git">
+            <img src="Images/github.png" alt="Github logo" id="git" class="logo">
             <a href="https://github.com/Charlie-Ball" target="_blank">Charlie-Ball</a>
         </div>
     </footer>
