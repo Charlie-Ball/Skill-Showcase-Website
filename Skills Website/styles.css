@@ -1,3 +1,5 @@
+/* main */
+
 #spanExample {
     color: #45A29E;
 }
@@ -15,7 +17,7 @@ nav {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-header{
+#mainHead{
     background-color: #C5C6C7;
     color: #1F2833;
 }
@@ -42,7 +44,7 @@ h1 {
     text-align: center;
 }
 
-img {
+.logo {
     max-width: 2.5vw;
     max-height: 2.5vw;
 }
@@ -57,6 +59,62 @@ a, a:visited {
 
 a:hover, a:active {
     color: #66FCF1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#git {
+    background-color: #C5C6C7;
+}
+
+.button {
+    max-width: 40%;
+    max-height: 100%;
+    border-color: #2b2b2b;
+    border-width: 100%;
+    border-style: solid;
+}
+
+#flex {
+    padding: 5%;
+    border-color: #2b2b2b;
+    border-width: 100%;
+    border-style: solid;
+    border-radius: 30%;
+}
+
+.nava, .nava:visited, .nava:hover, .nava:active {
+    color: #1F2833;
+    text-underline-offset: -250%;
+}
+
+/* Form */
+
+#formHTML {
+    background-color: #0B0C10;
+    color: #45A29E;
+}
+
+.formHead {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 75%;
+}
+
+legend {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#flexform {
+    color: #C5C6C7;
+    display: flex;
+}
+
+fieldset {
+    color: #C5C6C7;
 }
 
 footer {
