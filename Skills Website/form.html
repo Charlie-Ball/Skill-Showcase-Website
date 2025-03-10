@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            
+            <a href="main.html"><img href="Images/61972.png" alt="Home Button" id="home" aria-hidden="true"></a>
             <h1 class="formHead">HTML and CSS form</h1>
             <h2 class="formHead">By Charlie Ball</h2>
         </header>
@@ -16,19 +16,28 @@
             <form>
                 <fieldset id="flexform">
                     <legend>Personal info</legend>
-                    <label for="firstName">First name: <input type="text" id="firstName" name="FN" required></label>
-                    <label for="lastName">Last name: <input type="text" id="lastName" name="LN" required></label>
-                    <label for="DOB">Date of birth: <input type="date" id="DOB" name="DOB" required></label>
-                    <label for="email">Email: <input type="email" id="email" name="email" required></label>
+                    <label for="firstName">First name <span class="red">*</span>: <input type="text" id="firstName" name="FN" required></label>
+                    <label for="lastName">Last name <span class="red">*</span>: <input type="text" id="lastName" name="LN" required></label>
+                    <label for="DOB">Date of birth <span class="red">*</span>: <input type="date" id="DOB" name="DOB" required></label>
+                    <label for="email">Email <span class="red">*</span>: <input type="email" id="email" name="email" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Quiz</legend>
-                    <p>1) Is HTML a programing language?</p>
+                    <p>1) Is HTML a programing language? <span class="red">*</span></p>
                     <label for="NO1"><input type="radio" id="NO1" name="HTML Y/N" checked> Yes</label>
                     <label for="NO2"><input type="radio" id="NO2" name="HTML Y/N"> No</label>
-                    <p></p>
+                    <p>2) True or False: CSS is used for styles <span class="red">*</span></p>
+                    <select id="T/F" name="T/F" required>
+                        <option value="select">Select option</option>
+                        <option value="T">True</option>
+                        <option value="F">False</option>
+                    </select>
                 </fieldset>
-                <input type="submit">
+                <fieldset>
+                    <legend>Thoughts</legend>
+                    <textarea id="opinion" placeholder="Please share your thoughts on this form here!"></textarea>
+                </fieldset>
+                <input type="submit" id="submit">
             </form>
         </main>
     </body>
