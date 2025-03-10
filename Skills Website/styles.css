@@ -79,11 +79,11 @@ footer {
 }
 
 #flex {
-    padding: 5%;
+    padding: 2.5%;
     border-color: #2b2b2b;
     border-width: 100%;
     border-style: solid;
-    border-radius: 30%;
+    border-radius: 25px;
 }
 
 .nava, .nava:visited, .nava:hover, .nava:active {
@@ -132,6 +132,10 @@ fieldset {
     max-height: 10vw;
 }
 
+#home {
+    max-width: 50px;
+    max-height: 50px;
+}
 #home {
     max-width: 50px;
     max-height: 50px;
