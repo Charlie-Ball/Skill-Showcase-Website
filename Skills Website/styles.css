@@ -117,11 +117,22 @@ fieldset {
     color: #C5C6C7;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
+.red {
+    color: red;
 }
 
-#git {
-    background-color: #C5C6C7;
+#submit {
+    margin-top: 1%;
+}
+
+#opinion {
+    width: 33%;
+    max-width: 33%;
+    height: 10vw;
+    max-height: 10vw;
+}
+
+#home {
+    max-width: 50px;
+    max-height: 50px;
 }
