@@ -1,11 +1,65 @@
-/* main */
+/* general */
 
-#spanExample {
-    color: #45A29E;
+.sr {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
 }
 
 html {
     background-color: #0B0C10;
+    color: #C5C6C7;
+}
+
+body {
+    margin: 0;
+}
+
+#home {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.subpageTitle {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 75%;
+    color: #45A29E;
+}
+
+main, footer {
+    margin: 2%;
+    padding: 2vw
+}
+
+h1, h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #45A29E;
+}
+
+h1 {
+    text-align: center;
+}
+
+p, li {
+    font-family: Georgia, Garamond, serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* main */
+
+#spanExample {
     color: #45A29E;
 }
 
@@ -17,6 +71,11 @@ nav {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.nava, .nava:visited, .nava:hover, .nava:active {
+    color: #1F2833;
+    text-underline-offset: -250%;
+}
+
 #mainHead{
     background-color: #C5C6C7;
     color: #1F2833;
@@ -25,26 +84,10 @@ nav {
     top: 0;
 }
 
-body {
-    margin: 0;
-}
-
-main, footer {
-    margin: 2%;
-    padding: 2vw
-}
-
-h1, h2 {
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-p {
-    font-family: Georgia, Garamond, serif;
-    color: #C5C6C7;
-}
-
-h1 {
-    text-align: center;
+.button {
+    max-width: 40%;
+    max-height: 100%;
+    border: 100% solid #2b2b2b;
 }
 
 .logo {
@@ -52,8 +95,8 @@ h1 {
     max-height: 2.5vw;
 }
 
-li {
-    color: #C5C6C7;
+#git {
+    background-color: #C5C6C7;
 }
 
 a, a:visited {
@@ -64,24 +107,7 @@ a:hover, a:active {
     color: #66FCF1;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-#git {
-    background-color: #C5C6C7;
-}
-
-.button {
-    max-width: 40%;
-    max-height: 100%;
-    border-color: #2b2b2b;
-    border-width: 100%;
-    border-style: solid;
-}
-
-#flex {
+#linkContainer {
     padding: 2.5%;
     border-color: #2b2b2b;
     border-width: 100%;
@@ -89,43 +115,23 @@ footer {
     border-radius: 25px;
 }
 
-.nava, .nava:visited, .nava:hover, .nava:active {
-    color: #1F2833;
-    text-underline-offset: -250%;
-}
-
 /* Form */
-
-#formHTML {
-    background-color: #0B0C10;
-    color: #45A29E;
-}
-
-.formHead {
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    line-height: 75%;
-}
-
-legend {
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-#flexform {
-    color: #C5C6C7;
-    display: flex;
-}
 
 fieldset {
     color: #C5C6C7;
+}
+
+legend, caption, .mainYear {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .red {
     color: red;
 }
 
-#submit {
-    margin-top: 1%;
+#flexform {
+    color: #C5C6C7;
+    display: flex;
 }
 
 #opinion {
@@ -135,7 +141,99 @@ fieldset {
     max-height: 10vw;
 }
 
-#home {
-    max-width: 50px;
-    max-height: 50px;
+#submit {
+    margin-top: 1%;
+}
+
+/* table */
+
+#table {
+    background-color: #C5C6C7;
+    color: #0B0C10;
+    padding: 1.2em;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.years {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin-left: 75%;
+    margin-right: 25%;
+}
+
+.combineTables {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width:100%;
+    font-size: 1.2rem;
+}
+
+.mainYear {
+    font-weight: bold;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    
+}
+
+caption {
+    text-align: left;
+    margin: 2%;
+    color: #134d4a; 
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.border {
+    padding-top: 1rem;
+    border-top: 0.5rem double #1F2833;
+}
+
+.th {
+    text-align: left;
+    padding-left: 5%;
+    width: 70%;
+}
+
+.description {
+    font-weight: normal;
+    display: block;
+}
+
+.year {
+    text-align: right;
+    width: 10%;
+    min-width: 10%;
+    max-width: 10%;
+}
+
+tr:not(.years) {
+    background-color: #929292;
+}
+
+.total:hover {
+    background-color: #66FCF1;
+}
+
+@media (max-width: 1750px) and (min-width: 1500px) {
+    #table {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1250px) {
+    #table {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 2000px) and (min-width: 1750px) {
+    #table {
+        width: 40vw;
+    }
 }
