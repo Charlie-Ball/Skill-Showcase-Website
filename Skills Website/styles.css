@@ -219,3 +219,21 @@ tr:not(.years) {
 .total:hover {
     background-color: #66FCF1;
 }
+
+@media (max-width: 1750px) and (min-width: 1500px) {
+    #table {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1250px) {
+    #table {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 2000px) and (min-width: 1750px) {
+    #table {
+        width: 40vw;
+    }
+}
