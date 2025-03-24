@@ -1,3 +1,14 @@
+/* Variables */
+:root {
+    /* colours */
+    --background: #0B0C10;
+    --white: #C5C6C7;
+    --lightBlue: #45A29E;
+    --darkBlue: #1F2833;
+    --black: #2b2b2b;
+    --highlight: #66FCF1;
+}
+
 /* general */
 
 .sr {
@@ -14,8 +25,8 @@
 }
 
 html {
-    background-color: #0B0C10;
-    color: #C5C6C7;
+    background-color: var(--background);
+    color: var(--white);
 }
 
 body {
@@ -31,7 +42,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     line-height: 75%;
-    color: #45A29E;
+    color: var(--lightBlue);
 }
 
 main, footer {
@@ -41,7 +52,7 @@ main, footer {
 
 h1, h2 {
     font-family: Helvetica, Arial, sans-serif;
-    color: #45A29E;
+    color: var(--lightBlue);
 }
 
 h1 {
@@ -60,7 +71,7 @@ footer {
 /* main */
 
 #spanExample {
-    color: #45A29E;
+    color: var(--lightBlue);
 }
 
 nav {
@@ -72,13 +83,13 @@ nav {
 }
 
 .nava, .nava:visited, .nava:hover, .nava:active {
-    color: #1F2833;
+    color: var(--darkBlue);
     text-underline-offset: -250%;
 }
 
 #mainHead{
-    background-color: #C5C6C7;
-    color: #1F2833;
+    background-color: var(--white);
+    color: var(--darkBlue);
     position: fixed;
     width: 100%;
     top: 0;
@@ -87,7 +98,7 @@ nav {
 .button {
     max-width: 40%;
     max-height: 100%;
-    border: 100% solid #2b2b2b;
+    border: 100% solid var(--black);
 }
 
 .logo {
@@ -96,20 +107,20 @@ nav {
 }
 
 #git {
-    background-color: #C5C6C7;
+    background-color: var(--white);
 }
 
 a, a:visited {
-    color: #45A29E;
+    color: var(--lightBlue);
 }
 
 a:hover, a:active {
-    color: #66FCF1;
+    color: var(--highlight);
 }
 
 #linkContainer {
     padding: 2.5%;
-    border-color: #2b2b2b;
+    border-color: var(--black);
     border-width: 100%;
     border-style: solid;
     border-radius: 25px;
@@ -118,7 +129,7 @@ a:hover, a:active {
 /* Form */
 
 fieldset {
-    color: #C5C6C7;
+    color: var(--white);
 }
 
 legend, caption, .mainYear {
@@ -130,7 +141,7 @@ legend, caption, .mainYear {
 }
 
 #flexform {
-    color: #C5C6C7;
+    color: var(--white);
     display: flex;
 }
 
@@ -148,8 +159,8 @@ legend, caption, .mainYear {
 /* table */
 
 #table {
-    background-color: #C5C6C7;
-    color: #0B0C10;
+    background-color: var(--white);
+    color: var(--background);
     padding: 1.2em;
     width: 75%;
     margin-left: auto;
@@ -191,7 +202,7 @@ caption {
 
 .border {
     padding-top: 1rem;
-    border-top: 0.5rem double #1F2833;
+    border-top: 0.5rem double var(--darkBlue);
 }
 
 .th {
@@ -217,7 +228,7 @@ tr:not(.years) {
 }
 
 .total:hover {
-    background-color: #66FCF1;
+    background-color: var(--highlight);
 }
 
 @media (max-width: 1750px) and (min-width: 1500px) {
@@ -237,3 +248,4 @@ tr:not(.years) {
         width: 40vw;
     }
 }
+
